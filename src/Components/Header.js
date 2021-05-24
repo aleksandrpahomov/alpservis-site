@@ -5,6 +5,8 @@ import logo from './logo-alpservis.png'
 import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Contacts from "../Pages/Contacts";
+import Partners from "../Pages/Partners";
+import Portfolio from "../Pages/Portfolio";
 class Header extends Component {
     render() {
         return (
@@ -27,6 +29,8 @@ class Header extends Component {
                             <Nav className="mr-auto">
                                 <Nav.Link href="/"> Главная </Nav.Link>
                                 <Nav.Link href="/about"> О нас </Nav.Link>
+                                <Nav.Link href="/partners"> Партнеры </Nav.Link>
+                                <Nav.Link href="/portfolio"> Портфолио </Nav.Link>
                                 <Nav.Link href="/contacts"> Контакты </Nav.Link>
                             </Nav>
                         <Form inline >
@@ -36,7 +40,7 @@ class Header extends Component {
                                 className="mr-md-5"
                             />
                         </Form>
-                        <Button variant="primary">Search</Button>
+                        <Button variant="outline-info">Search</Button>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
@@ -45,6 +49,8 @@ class Header extends Component {
                         <Route exact path="/" component={Home}/>
                         <Route exact path="/about" component={About}/>
                         <Route exact path="/contacts" component={Contacts}/>
+                        <Route exact path="/partners" component={Partners}/>
+                        <Route exact path="/portfolio" component={Portfolio}/>
                     </Switch>
                 </Router>
             </>
